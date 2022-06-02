@@ -9,45 +9,30 @@
 }
 
 .content-block1,
-.content-block2,
-.content-block3 {
-    width: 542px;
-    height: 100px;
+.content-block2 {
+    width: 600px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     font-size: 20px;
-    color: #fff;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+
+/* запрос */
 .content-block1 {
-    background-color: rgb(139, 117, 145);
-    
-}
-
-.content-block2 {
     background-color: bisque;
-    color: #000;
-}
-
-.content-block3 {
-    background-color: cornflowerblue;
-}
-
-.input-click {
-    width: 542px;
-    display: flex;
+    height: 100px;
     justify-content: space-around;
     align-items: center;
 }
 
-.button {
-    width: 40px;
+/* результат */
+.content-block2 {
+    background-color: rgb(94, 200, 219);
+    height: 800px;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
 }
 
-input {
-    width: 400px;
-}

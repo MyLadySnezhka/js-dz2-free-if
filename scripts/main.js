@@ -1,19 +1,18 @@
-const fooditem = document.querySelector('[select="food"]');
 
-const run = () => {
-    const foodid = fooditem.value;
-    console.log(foodid);
+const foodlink = document.querySelector('select[name="food"]');
+const refrlink = document.querySelector('.content-block2');
 
+foodlink.addEventListener('click', (ev) => {
 
-    if(foodid === 'жираф') {
-    contentblock3.innerHTML = 'Вынь слона!!!';
-}
+    let fooditem = foodlink.value;
 
-}
+    if (fooditem === 'jirafe') {
+    refrlink.innerHTML = 'НЕТ МЕСТА! Вынь слона!!!'
+    }
 
-run();
-fooditem.addEventListener('change', run);
+console.log(fooditem);
 
+})
 
 
 
