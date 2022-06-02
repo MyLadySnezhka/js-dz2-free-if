@@ -9,7 +9,8 @@
 }
 
 .content-block1,
-.content-block2 {
+.content-block2,
+.content-block3 {
     width: 600px;
     margin: 0 auto;
     display: flex;
@@ -27,7 +28,14 @@
     align-items: center;
 }
 
-/* результат */
+.content-block3 {
+    background-color: rgb(61, 199, 153);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* холодильник */
 .content-block2 {
     background-color: rgb(94, 200, 219);
     height: 800px;
