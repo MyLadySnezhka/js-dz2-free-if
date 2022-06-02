@@ -9,6 +9,8 @@ let fullrefr = 0;
 foodlink.addEventListener('click', (ev) => {
 
     let fooditem = foodlink.value;
+    let test = fooditem.innerHTML;
+    console.log(test);
 
     if(count > 5) {
         messlink.innerHTML = "Холодильник переполнен!"
@@ -25,12 +27,11 @@ foodlink.addEventListener('click', (ev) => {
     }
 
     else {
-        refrlink.insertAdjacentHTML = ('afterend', fooditem);
-        refrlink.innerHTML = fooditem;
+        refrlink.insertAdjacentHTML('beforeend', fooditem);
         count = count + 1;
     }
 
-    console.log(count);
+    
 
 })
 
