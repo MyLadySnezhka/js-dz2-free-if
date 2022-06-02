@@ -6,7 +6,7 @@ const messlink = document.querySelector('.content-block3');
 let count = 0;
 let fullrefr = 0;
 
-foodlink.addEventListener('click', (ev) => {
+foodlink.addEventListener('change', (ev) => {
 
     let fooditem = foodlink.value;
 
@@ -27,6 +27,7 @@ foodlink.addEventListener('click', (ev) => {
     else {
         let food = ' ' + fooditem;
         refrlink.insertAdjacentHTML('beforeend', food);
+        refrlink.insertAdjacentHTML('beforeend', '<br>');
         count = count + 1;
     }
 
